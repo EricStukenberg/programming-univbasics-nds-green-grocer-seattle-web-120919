@@ -69,7 +69,7 @@ def apply_coupons(cart, coupons)
     c_len = cart.length()
     i = 0 
     coup_item = coup_h[:item]
-    while i < len
+    while i < c_len
       cart_h = cart[i]
       cart_item = cart_h[:item]
 
