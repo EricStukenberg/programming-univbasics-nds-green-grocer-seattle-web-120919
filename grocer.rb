@@ -163,24 +163,10 @@ def checkout(cart, coupons)
     sub_total = price*hash[:count]
     total = total + sub_total
     counter += 1
-    print hash
-    print "\n<----------------------------------------------------------------------->\n"
-    print "price  = "
-    print price
-    print " \ncount = "
-    print hash[:count]
-    print "\nsub total = "
-    print sub_total
-    print "\ntotal = "
-    print total
-    print "\n<----------------------------------------------------------------------->\n"
-
   end
   if(total > 100)
     total = total - ((total*0.1).round(2))
   end
-  print "\n<----------------END--------------------------------------------------->\n"
+
   return total
-
-
 end
